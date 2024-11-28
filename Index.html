@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botões de Mensagem</title>
+  <link href="style.css"
+  rel="stylesheet"/>
+    <style>
+        .mensagem {
+            display: none;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+  <h1>dois reais ou um presente misterioso?</h1>
+    <button onclick="document.getElementById('mensagemdoisreais').style.display='block'; document.getElementById('mensagempresentemisterioso').style.display='none';">dois reais</button>
+    <button onclick="document.getElementById('mensagempresentemisterioso').style.display='block'; document.getElementById('mensagemdoisreais').style.display='none';">presente misterioso</button>
+
+    <div id="mensagemdoisreais" class="mensagem">
+        <p>Parabens! compre uma bala!</p>
+    </div>
+    <div id="mensagempresentemisterioso" class="mensagem">
+        <p>te amo!</p>
+    </div>
+</body>
+</html>
